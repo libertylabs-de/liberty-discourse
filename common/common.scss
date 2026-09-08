@@ -89,9 +89,9 @@
   }
 }
 
-.search-input {
-  border-radius: 6em;
-}
+  .search-menu .search-input, .search-menu-container .search-input {
+    border-radius: 6em;
+  }
 
 .display-search-banner {
   #main-outlet {
