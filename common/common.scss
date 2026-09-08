@@ -75,7 +75,7 @@
 
   .search-menu .search-input {
     border-color: var(--tertiary-hover);
-    outline: 1px solid var(--tertiary-hover);
+    /*outline: 1px solid var(--tertiary-hover);*/
   }
 
   .results {
@@ -90,7 +90,7 @@
 }
 
 .search-input {
-  border-radius: 0.25em;
+  border-radius: 6em;
 }
 
 .display-search-banner {
