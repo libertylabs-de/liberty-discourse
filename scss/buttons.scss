@@ -28,7 +28,7 @@
   &:focus-visible,
   &:hover {
     background: var(--primary-100);
-    color: var(--primary);
+    color: var(--primary-hover);
     box-shadow: 0 0 0 4px var(--button-box-shadow);
 
     .d-icon {
@@ -37,8 +37,8 @@
   }
 
   &:active:not(:hover, :focus) {
-    color: var(--primary);
-    background: var(--tertiary-300);
+    color: var(--primary-hover);
+    background: var(--tertiary-hover);
     background-image: none;
 
     .d-icon {
@@ -59,7 +59,7 @@
   &:not([disabled]):focus-visible,
   &:not([disabled]):hover {
     .discourse-no-touch & {
-      background-color: var(--tertiary);
+      background-color: var(--tertiary-hover);
       box-shadow: 0 0 0 4px var(--button-box-shadow);
       /*color: var(--accent-text-color);*/
 
