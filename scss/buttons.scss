@@ -21,7 +21,7 @@
   background: var(--primary-100);
 
   .d-icon {
-    color: var(--accent-color);
+    color: var(--tertiary);
   }
 
   &:focus-visible,
@@ -31,7 +31,7 @@
     box-shadow: 0 0 0 4px var(--button-box-shadow);
 
     .d-icon {
-      color: var(--accent-color);
+      color: var(--tertiary);
     }
   }
 
@@ -48,7 +48,7 @@
 
 .btn-primary,
 .discourse-no-touch .btn-default.ai-new-question-button {
-  background-color: var(--accent-color);
+  background-color: var(--tertiary);
   color: var(--accent-text-color);
 
   .d-icon {
@@ -58,7 +58,7 @@
   &:not([disabled]):focus-visible,
   &:not([disabled]):hover {
     .discourse-no-touch & {
-      background-color: var(--accent-color);
+      background-color: var(--tertiary);
       box-shadow: 0 0 0 4px var(--button-box-shadow);
       color: var(--accent-text-color);
 
@@ -70,8 +70,8 @@
 
   &:active {
     background: light-dark(
-      oklch(from var(--accent-color) 40% c h),
-      oklch(from var(--accent-color) 50% c h)
+      oklch(from var(--tertiary) 40% c h),
+      oklch(from var(--tertiary) 50% c h)
     );
   }
 
