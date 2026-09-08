@@ -1,8 +1,37 @@
 @use "lib/viewport";
 
+@font-face {
+  font-family: "Liberty Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/LibertySans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Liberty Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/LibertySans-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Liberty Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/LibertySans-Bold.woff2") format("woff2");
+}
+
+:root {
+  --font-family: "Liberty Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --heading-font-family: "Liberty Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
 // custom search banner customizations
 .welcome-banner.--location-above-topic-content .custom-search-banner-wrap {
-  color: var(--primary);
+  /*color: var(--primary);*/
 }
 
 .custom-search-banner-wrap {
