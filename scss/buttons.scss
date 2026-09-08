@@ -19,6 +19,7 @@
 .discourse-no-touch .btn-default,
 .discourse-no-touch .select-kit .select-kit-header.btn-default {
   background: var(--primary-100);
+  font-weight: 600;
 
   .d-icon {
     color: var(--tertiary);
@@ -49,10 +50,10 @@
 .btn-primary,
 .discourse-no-touch .btn-default.ai-new-question-button {
   background-color: var(--tertiary);
-  color: var(--accent-text-color);
+  font-weight: 600;
 
   .d-icon {
-    color: var(--accent-text-color);
+    /*color: var(--accent-text-color);*/
   }
 
   &:not([disabled]):focus-visible,
@@ -60,10 +61,10 @@
     .discourse-no-touch & {
       background-color: var(--tertiary);
       box-shadow: 0 0 0 4px var(--button-box-shadow);
-      color: var(--accent-text-color);
+      /*color: var(--accent-text-color);*/
 
       .d-icon {
-        color: var(--accent-text-color);
+        /*color: var(--accent-text-color);*/
       }
     }
   }
