@@ -662,6 +662,6 @@ div[class^=category-title-header] {
   border-radius: 0.85em;
   color:  var(--primary);
 }
---category-banner-color {
+.sidebar-section-header-text, sidebar-section-header-caret {
   color: var(--tertiary);
 }
