@@ -272,8 +272,8 @@ html {
     );*/
     background: linear-gradient(
       90deg,
-      #d5d5d5 0%,
-      #d5d5d5 100%
+      var(--quaternary) 0%,
+      var(--quaternary) 100%
     );
     clip-path: ellipse(148% 70% at 91% -14%);
   }
