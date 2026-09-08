@@ -13,7 +13,7 @@
     line-height: var(--line-height-small);
   }
 
-  p {
+  p {d
     margin-top: 0.5em;
     margin-bottom: 2em;
   }
@@ -273,8 +273,8 @@ html {
     background:
       linear-gradient(
         0deg,
-        rgb(var(--primary-rgb), 0.075) 0%,
-        rgb(var(--primary-rgb), 0.075) 100%
+        var(--primary), 0.075) 0%,
+        rgba(241,234,217,1), 0.075) 100%
       ),
       linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
   }
