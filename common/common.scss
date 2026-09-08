@@ -260,24 +260,20 @@ html {
   }
 
   .background-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    /*background: linear-gradient(
-      90deg,
-      var(--tertiary-hover) 0%,
-      var(--tertiary) 100%
-    );*/
-    background:
-      linear-gradient(
-        0deg,
-        var(--primary), 0.075) 0%,
-        rgba(241,234,217,1), 0.075) 100%
-      ),
-      linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+  background:
+    linear-gradient(
+      0deg,
+      var(--primary) 0%,
+      rgb(241 234 217) 100%
+    ),
+    linear-gradient(0deg, var(--secondary) 0%, var(--secondary) 100%);
+}
 
   body.no-ember .background-container {
     display: none;
