@@ -1,6 +1,6 @@
 {
-  "name": "Air Theme",
-  "authors": "Discourse",
+  "name": "Liberty Theme",
+  "authors": "Discourse + Liberty Labs",
   "about_url": "https://meta.discourse.org/t/discourse-air-theme/197703",
   "license_url": "https://github.com/discourse/discourse-air/blob/main/LICENSE",
   "components": [
@@ -14,7 +14,7 @@
     "air-light": {
       "primary": "1c1c1c",
       "secondary": "f9fcff",
-      "tertiary": "3877e5",
+      "tertiary": "b78b20",
       "quaternary": "7e8b93",
       "header_background": "f9fcff",
       "header_primary": "122b43",
