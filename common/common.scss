@@ -654,3 +654,8 @@ html body #main-outlet {
 .welcome-banner__title {
   font-weight: 700;
 }
+
+div[class^=category-title-header] {
+  backgroound: var(--primary));
+  border-radius: 1em;
+}
