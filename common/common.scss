@@ -35,7 +35,7 @@
 }
 
 .custom-search-banner-wrap {
-  color: var(--secondary);
+  color: var(--primary);
 
   .custom-search-banner-headline,
   h1 {
@@ -43,6 +43,7 @@
   }
 
   p {
+    color: var(--primary-300);
     margin-top: 0.5em;
     margin-bottom: 2em;
   }
