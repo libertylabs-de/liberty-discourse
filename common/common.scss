@@ -282,8 +282,7 @@ div.ac-wrap {
 
 html {
   body:not(.no-ember) {
-    background: linear-gradient(180deg, var(--quaternary) 0%, var(--quaternary) 50%, var(--quaternary) 100%), linear-gradient(0deg, var(--quaternary) 0%, var(--quaternary) 100%);
-  }
+    background: linear-gradient(180deg, var(--quaternary) 0%, var(--primary-100) 50%, var(--primary-100) 100%), linear-gradient(0deg, var(--secondary) 0%, var(--secondary) 100%);  }
 
   body.no-ember .background-container {
     display: none;
