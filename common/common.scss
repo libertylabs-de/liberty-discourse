@@ -285,8 +285,8 @@ html {
     background:
       linear-gradient(
         180deg,
-        var(--primary-700), 0.075) 0%,
-        var(--primary-700), 0.075) 100%
+        rgb(var(--primary-rgb), 0.075) 0%,
+        rgb(var(--primary-rgb), 0.075) 100%
       ),
       
       linear-gradient(0deg, var(--primary) 100%, var(--primary) 100%);
