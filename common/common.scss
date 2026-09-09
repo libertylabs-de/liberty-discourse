@@ -285,9 +285,10 @@ html {
     background:
       linear-gradient(
         180deg,
-        rgb(var(--primary-700-rgb), 0.075) 0%,
-        rgb(var(--primary-700-rgb), 0.075) 100%
+        rgb(var(--primary-200-rgb), 0.075) 0%,
+        rgb(var(--primary-200-rgb), 0.075) 100%
       ),
+      
       linear-gradient(0deg, var(--primary) 100%, var(--primary) 100%);
   }
 
