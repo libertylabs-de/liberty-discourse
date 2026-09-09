@@ -282,37 +282,28 @@ div.ac-wrap {
 
 html {
   body:not(.no-ember) {
-    background: linear-gradient(
-      90deg,
-      var(--quaternary) 0%,
-      var(--quaternary) 100%
-    );
-    clip-path: ellipse(148% 70% at 91% -14%);
-    /*background:
+    background:
       linear-gradient(
         0deg,
         rgb(var(--primary-rgb), 0.075) 0%,
         rgb(var(--primary-rgb), 0.075) 100%
       ),
-      linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);*/
+      linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
   }
 
   .background-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-
-  background:
-    linear-gradient(
-      180deg,
-      var(--quaternary) 0%,
-      var(--primary-100) 50%,
-      var(--primary-100) 100%
-    ),
-    linear-gradient(0deg, var(--secondary) 0%, var(--secondary) 100%);
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(
+      90deg,
+      var(--tertiary-hover) 0%,
+      var(--tertiary) 100%
+    );
+    clip-path: ellipse(148% 70% at 91% -14%);
+  }
 
   body.no-ember .background-container {
     display: none;
