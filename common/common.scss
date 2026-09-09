@@ -284,7 +284,7 @@ html {
   body:not(.no-ember) {
     background:
       linear-gradient(
-        0deg,
+        180deg,
         rgb(var(--primary-rgb), 0.075) 0%,
         rgba(241, 234, 217, 0.075) 100%
       ),
@@ -299,7 +299,7 @@ html {
     width: 100vw;
     background: linear-gradient(
       90deg,
-      var(--tertiary-hover) 0%,
+      rgba(241, 234, 217, 0.075) 0%,
       var(--tertiary) 100%
     );
     clip-path: polygon(0% 0%, 100% 0%, 100% 42%, 0% 42%);
