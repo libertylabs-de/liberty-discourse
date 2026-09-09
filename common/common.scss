@@ -282,12 +282,13 @@ div.ac-wrap {
 
 html {
   body:not(.no-ember) {
-    background:
+    /*background:
       linear-gradient(
         180deg,
         rgb(var(--primary-rgb), 0.075) 0%,
         rgb(var(--primary-rgb), 0.075) 100%
-      ),
+      ),*/
+    background: var(primary-200),
       
       linear-gradient(0deg, var(--primary) 100%, var(--primary) 100%);
   }
@@ -298,12 +299,11 @@ html {
     left: 0;
     height: 100vh;
     width: 100vw;
-    /*background: linear-gradient(
+    background: linear-gradient(
       180deg,
       rgba(241, 234, 217, 0.075) 0%,
       var(--primary-700) 100%
-    );*/
-    background: var(primary-200);
+    );
     clip-path: polygon(0% 0%, 100% 0%, 100% 42%, 0% 42%);
   }
 
