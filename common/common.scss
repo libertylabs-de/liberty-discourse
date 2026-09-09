@@ -286,7 +286,7 @@ html {
       linear-gradient(
         180deg,
         rgba(241, 234, 217, 0.075) 100%
-        var(--secondary), 0.075) 0%,
+        rgb(var(--secondary-rgb), 0.075) 0%,
       ),
       linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
   }
