@@ -291,20 +291,6 @@ html {
       linear-gradient(0deg, var(--secondary) 0%, var(--secondary) 100%);
   }
 
-  .background-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(
-      180deg,
-      rgba(241, 234, 217, 0.075) 0%,
-      var(--primary-700) 100%
-    );
-    clip-path: polygon(0% 0%, 100% 0%, 100% 42%, 0% 42%);
-  }
-
   body.no-ember .background-container {
     display: none;
   }
