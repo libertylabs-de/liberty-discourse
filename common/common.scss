@@ -676,7 +676,7 @@ div[class^=category-title-header] {
   color:  var(--secondary);
 }
 
-.below-footer-outlet.custom-footer.ember-view > #wrap {
+.below-footer-outlet.custom-footer.ember-view > #wrap, .custom-footer {
   background: var(--header_background) !important;
 }
     
