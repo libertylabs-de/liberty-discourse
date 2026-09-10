@@ -669,22 +669,3 @@ div[class^=category-title-header] {
   color: var(--tertiary);
 }
 
-/*----- Putting Modern Category + Group Boxes output on top of page-----*/
-
-/* Desktop only, adjust selector if needed */
-.categories-list {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Move the category boxes container before the header visually */
-.custom-category-boxes-container,
-.category-boxes-container {
-  order: -1;
-}
-
-/* Ensure header doesn’t also get reordered unintentionally */
-.navigation-container,
-.d-header {
-  order: 0;
-}
