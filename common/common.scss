@@ -8,6 +8,22 @@
   src: url($liberty-sans-regular) format("woff2");
 }
 
+@font-face {
+  font-family: "Liberty Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url($liberty-sans-medium) format("woff2");
+}
+
+@font-face {
+  font-family: "Liberty Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url($liberty-sans-bold) format("woff2");
+}
+
 :root {
   --font-family: "Liberty Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
   --heading-font-family: "Liberty Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
