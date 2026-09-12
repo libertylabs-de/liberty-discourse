@@ -602,12 +602,12 @@ html body #main-outlet {
   }
 
   &::before {
-    background: linear-gradient(
+    /*background: linear-gradient(
       90deg,
       var(--tertiary-hover) 0%,
       var(--tertiary) 100%
     );
-    clip-path: ellipse(148% 70% at 91% -14%);
+    clip-path: ellipse(148% 70% at 91% -14%);*/
     content: "";
     width: 100%;
     height: 100%;
