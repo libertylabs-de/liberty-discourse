@@ -10,6 +10,11 @@
   "modifiers": {
     "serialize_topic_excerpts": true
   },
+  "assets": {
+      "liberty-sans-regular": "assets/LibertySans-Regular.woff2",
+      "liberty-sans-medium": "assets/LibertySans-Medium.woff2",         
+      "liberty-sans-bold": "assets/LibertySans-Bold.woff2"
+  },
   "color_schemes": {
     "air-light": {
       "primary": "1c1c1c",
@@ -37,12 +42,6 @@
       "love": "c16ad7",
       "selected": "2f0177",
       "hover": "535353"
-    },
-      "assets": {
-        "liberty-sans-regular": "assets/LibertySans-Regular.woff2",
-        "liberty-sans-medium": "assets/LibertySans-Medium.woff2",         
-        "liberty-sans-bold": "assets/LibertySans-Bold.woff2"
-    }
   },
   "screenshots": ["screenshots/light.webp", "screenshots/dark.webp"]
 }
