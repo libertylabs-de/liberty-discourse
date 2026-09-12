@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/LibertySans-Regular.woff2") format("woff2");
+  src: url($liberty-sans-regular) format("woff2");
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("../fonts/LibertySans-Medium.woff2") format("woff2");
+  src: url($liberty-sans-medium) format("woff2");
 }
 
 @font-face {
@@ -21,7 +21,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/LibertySans-Bold.woff2") format("woff2");
+  src: url($liberty-sans-bold) format("woff2");
 }
 
 :root {
