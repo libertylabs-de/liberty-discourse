@@ -677,6 +677,11 @@ div[class^=category-title-header] {
 .category-breadcrumb {
   background: var(--primary-100);
   border-radius: .65em;
+    
+  .select-kit.combo-box .select-kit-header {
+    background: none !important;
+    border-color: none !important;
+  }
 }
 .select-kit.combo-box.category-drop.has-selection .category-drop-header {
   border: none;
