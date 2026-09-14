@@ -700,3 +700,6 @@ div[class^=category-title-header] {
 .select-kit .select-kit-header:not(.btn) {
   border-radius: .5em;
 }
+:where(.uc-modernize-foundation-theme) .nav-pills>li>a:hover::after {
+  background: none;
+}
