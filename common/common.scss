@@ -677,7 +677,10 @@ div[class^=category-title-header] {
 .category-breadcrumb {
   background: var(--primary-100);
   border-radius: .65em;
+
+  li {
     
+  }
   .select-kit.combo-box .select-kit-header {
     background: none !important;
     border: none !important;
@@ -708,3 +711,4 @@ div[class^=category-title-header] {
 :where(.uc-modernize-foundation-theme) .nav-pills>li>a:hover::after {
   background: var(--primary-50);
 }
+
