@@ -697,4 +697,6 @@ div[class^=category-title-header] {
 :where(.uc-modernize-foundation-theme) .navigation-container .nav-pills>li>a {
   margin: .2em;
 }
-
+.select-kit .select-kit-header:not(.btn) {
+  border-radius: .5em;
+}
