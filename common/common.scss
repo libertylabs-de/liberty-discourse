@@ -707,7 +707,7 @@ div[class^=category-title-header] {
 }
 :where(.uc-modernize-foundation-theme) .select-kit.single-select .select-kit-header:not(.btn):active {
   background-color: var(--primary-50);
-  border-color: var(--primary-300);
+  border: 1px solid var(--primary-300);
 }
 .select-kit .select-kit-header {
   padding: .25em .65em;
