@@ -675,14 +675,14 @@ div[class^=category-title-header] {
 //Navigation Bar in #main-outlet
 
 .category-breadcrumb {
-  background: #ececec;
+  background: var(--primary-100);
   border-radius: .65em;
 }
 .select-kit.combo-box.category-drop.has-selection .category-drop-header {
   border: none;
 }
 #navigation-bar {
-  background: #ddd;
+  background: var(--primary-100);
   border-radius: .65em;
 }
 .nav-pills:not(.user-nav)>li a.active, .nav-pills:not(.user-nav)>li>a {
