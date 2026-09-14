@@ -706,5 +706,5 @@ div[class^=category-title-header] {
   border-radius: .5em;
 }
 :where(.uc-modernize-foundation-theme) .nav-pills>li>a:hover::after {
-  background: none;
+  background: var(--primary-50);
 }
