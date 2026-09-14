@@ -25,6 +25,7 @@
 }
 
 :root {
+  --d-border-radius: 0.5em;
   --font-family: "Liberty Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
   --heading-font-family: "Liberty Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
 }
@@ -683,7 +684,6 @@ div[class^=category-title-header] {
   }
   .select-kit.combo-box .select-kit-header {
     background: none !important;
-    border: none !important;
   }
 }
 .select-kit.combo-box.category-drop.has-selection .category-drop-header {
