@@ -38,7 +38,7 @@
 // Manipulate z-index of #main-outletto account for image/gradient of Liberty Category Boxes component
 
 #main-outlet-wrapper #main-outlet {
-  z-index: 99
+  z-index: 99;
 }
 
 // Custom search banner customizations
@@ -675,6 +675,7 @@ div[class^=category-title-header] {
 .below-footer-outlet.custom-footer > #wrap, .custom-footer {
   background: var(--header_background) !important;
   z-index: 100;
+  position: sticky;
 }
 .data-easyfooter-section, .custom-footer .first-box .heading {
   color:  var(--primary);
