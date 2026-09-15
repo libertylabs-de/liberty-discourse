@@ -704,7 +704,7 @@ div[class^=category-title-header] {
 }
 .nav-pills>li a.active, .nav-pills>li button.active {
   background: var(--secondary);
-  
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .07), 0 10.85px 14px rgba(0, 0, 0, .045), 0 4.5px 10px rgba(0, 0, 0, .035), 0 1.65px 3.65px rgba(0, 0, 0, .025);
 }
 :where(.uc-modernize-foundation-theme) .navigation-container .nav-pills>li>a {
   margin: .2em;
