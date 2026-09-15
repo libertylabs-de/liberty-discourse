@@ -676,6 +676,9 @@ div[class^=category-title-header] {
   /*background: var(--header_background) !important;*/
   z-index: 100;
   position: sticky;
+}
+.below-footer-outlet.custom-footer > #wrap {
+  /*background: var(--header_background) !important;*/
   width: var(--main-outer-width, var(--d-max-width)) !important;
   max-width: var(--main-outer-width, var(--d-max-width)) !important;
 }
