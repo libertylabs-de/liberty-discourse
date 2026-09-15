@@ -688,8 +688,8 @@ div[class^=category-title-header] {
 }
 .below-footer-outlet.custom-footer > #wrap {
   /*background: var(--header_background) !important;*/
-  width: var(--main-outer-width, var(--d-max-width)) !important;
-  max-width: var(--main-outer-width, var(--d-max-width)) !important;
+  width: var(--main-outer-width, var(--d-max-width));
+  max-width: 100% !important;
 }
 .data-easyfooter-section, .custom-footer .first-box .heading {
   color:  var(--primary);
