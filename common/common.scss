@@ -31,6 +31,10 @@
   --heading-font-family: "Liberty Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
 }
 
+.btn {
+  padding: .3em .5em;
+}
+
 // custom search banner customizations
 .welcome-banner.--location-above-topic-content .custom-search-banner-wrap {
   color: var(--primary) !important;
