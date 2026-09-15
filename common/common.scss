@@ -259,8 +259,9 @@ div.ac-wrap {
 
 .menu-panel.drop-down {
   margin-top: 1em;
-  border-radius: 0.5em;
-  border: 1px solid var(--primary-low-mid);
+  border-radius: 1em;
+  border: none;
+  /*border: 1px solid var(--primary-low-mid);*/
 }
 
 .drop-down-mode .d-header-icons .active .icon {
