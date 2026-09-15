@@ -35,7 +35,13 @@
   padding: .3em .5em;
 }
 
-// custom search banner customizations
+// Manipulate z-index of #main-outletto account for image/gradient of Liberty Category Boxes component
+
+#main-outlet-wrapper #main-outlet {
+  z-index: 99
+}
+
+// Custom search banner customizations
 .welcome-banner.--location-above-topic-content .custom-search-banner-wrap {
   color: var(--primary) !important;
 }
