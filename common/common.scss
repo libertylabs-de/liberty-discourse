@@ -131,6 +131,11 @@
   margin: 1em 0;
 }
 
+.list-control {
+  padding-bottom: 1em;
+  border-bottom: var(--table-border-width) solid var(--table-border-color);
+}
+
 .topic-list .topic-list-header .topic-list-data,
 .topic-list .topic-list-item .topic-list-data {
   padding: 15px 5px;
@@ -414,12 +419,8 @@ html body #main-outlet {
       display: flex;
       margin-bottom: 0.5em;
       background-color: var(--secondary);
-      border-bottom: 1px solid rgb(var(--primary-rgb), 0.2);
-      /*border: 1px solid rgb(var(--primary-rgb), 0.2);'/
-      /*border-radius: 1em;*/
       position: relative;
       transition: box-shadow 100ms ease-in-out;
-      /*box-shadow: 0 0 8px rgb(0, 0, 0, 0.05);*/
       overflow: hidden;
 
       &.visited {
