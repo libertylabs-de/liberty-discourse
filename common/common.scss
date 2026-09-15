@@ -677,7 +677,7 @@ div[class^=category-title-header] {
   z-index: 100;
   position: sticky;
   .wrap {
-    max-width: var(--d-max-width);
+    max-width: var(--d-max-width) !important;
   }
 }
 .below-footer-outlet.custom-footer {
