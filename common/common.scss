@@ -680,7 +680,11 @@ div[class^=category-title-header] {
     max-width: var(--d-max-width);
   }
 }
-
+.below-footer-outlet.custom-footer {
+  background: #1a1a1a;
+  .first-box .heading, .flexbox {
+    color: #fff;
+}
 .below-footer-outlet.custom-footer > #wrap {
   /*background: var(--header_background) !important;*/
   width: var(--main-outer-width, var(--d-max-width)) !important;
