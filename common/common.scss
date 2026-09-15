@@ -673,9 +673,11 @@ div[class^=category-title-header] {
 /*----- Easy Footer -----*/
 
 .below-footer-outlet.custom-footer > #wrap, .custom-footer {
-  background: var(--header_background) !important;
+  /*background: var(--header_background) !important;*/
   z-index: 100;
   position: sticky;
+  width: var(--main-outer-width, var(--d-max-width)) !important;
+  max-width: var(--main-outer-width, var(--d-max-width)) !important;
 }
 .data-easyfooter-section, .custom-footer .first-box .heading {
   color:  var(--primary);
