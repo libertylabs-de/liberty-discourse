@@ -265,15 +265,20 @@ ol.category-breadcrumb {
       gap: var(--d-main-content-gap);
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
-      width: 96%;
   }
   .custom-category-boxes-container {
-      padding: 1em;
+      padding:.5em .5em 2.5em .5em;
   }
   .custom-category-boxes:not(.above-discovery-categories-outlet) .category-box-heading {
       font-size: 1em;
   }
-  
+  .category-logo:not(.no-logo-present)+.category-details {
+      max-height: 64px;
+      height: 64px;
+  }
+  .custom-category-boxes .category-box .category-box-inner {
+      column-gap: .5em !important;
+  }
   .welcome-banner {
       display: block;    
   } 
