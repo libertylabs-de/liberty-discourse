@@ -267,13 +267,13 @@ ol.category-breadcrumb {
       grid-template-rows: 1fr;
       width: 96%;
   }
-
   .custom-category-boxes-container {
       padding: 1em;
   }
   .custom-category-boxes:not(.above-discovery-categories-outlet) .category-box-heading {
       font-size: 1em;
   }
+  
   .welcome-banner {
       display: block;    
   } 
@@ -281,4 +281,9 @@ ol.category-breadcrumb {
     font-size: 1.65em;
   }
   
+  #navigation-bar {
+    background: var(--tertiary);
+    padding-left: .5em;
+  }
+
 }
