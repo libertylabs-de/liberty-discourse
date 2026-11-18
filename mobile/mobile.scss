@@ -273,8 +273,10 @@ ol.category-breadcrumb {
       font-size: 1em;
   }
   .category-logo:not(.no-logo-present)+.category-details {
-      max-height: 64px;
-      height: 64px;
+      max-height: 40px;
+      height: calc(40px - 1em);
+      display: flex;
+      align-items: center;
   }
   .custom-category-boxes .category-box .category-box-inner {
       column-gap: .5em !important;
@@ -290,5 +292,8 @@ ol.category-breadcrumb {
     background: var(--tertiary);
     padding-left: .5em;
   }
+  .full-width .contents .topic-list .topic-list-body .topic-list-item {
+    border-radius: 1em;
+  }  
 
 }
