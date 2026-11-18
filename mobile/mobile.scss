@@ -255,3 +255,24 @@ ol.category-breadcrumb {
 .list-controls .nav-pills .list-control-toggle-link-trigger {
   color: var(--secondary);
 }
+
+// Individual mods to this stylesheet to account for category boxes component etc.
+@media (width < 40rem) {
+  
+  .custom-category-boxes:not(.above-discovery-categories-outlet) {
+      display: grid;
+      grid-auto-flow: row;
+      gap: var(--d-main-content-gap);
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      width: 96%;
+  }
+
+  .custom-category-boxes-container {
+      padding: 1em;
+  }
+  .custom-category-boxes:not(.above-discovery-categories-outlet) .category-box-heading {
+      font-size: 1em;
+  }
+  
+}
