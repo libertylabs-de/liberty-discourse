@@ -1,4 +1,4 @@
-import { icon } from "discourse/helpers/d-icon";
+import icon from "discourse/helpers/d-icon";
 
 <template>
   <li class="liberty-breadcrumb-home">
