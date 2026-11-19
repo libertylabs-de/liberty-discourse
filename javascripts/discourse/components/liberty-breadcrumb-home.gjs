@@ -1,22 +1,10 @@
-import Component from "@glimmer/component";
-import { service } from "@ember/service";
-import icon from "discourse/helpers/d-icon";
+import { icon } from "discourse/helpers/d-icon";
 
-export default class LibertyBreadcrumbHome extends Component {
-  @service router;
-
-  get isCategoryPage() {
-    const path = (this.router.currentURL ?? "").split("?")[0];
-    return path === "/c" || path.startsWith("/c/");
-  }
-
-  <template>
-    {{#if this.isCategoryPage}}
-      <li class="liberty-breadcrumb-home-item">
-        <a href="/" aria-label="Home" class="liberty-breadcrumb-home-link">
-          {{icon "home"}}
-        </a>
-      </li>
-    {{/if}}
-  </template>
-}
+<template>
+  <li class="liberty-breadcrumb-home">
+    <a href="/" aria-label="Home">
+      {{icon "house"}}
+    </a>
+    {{icon "angle-right"}}
+  </li>
+</template>
