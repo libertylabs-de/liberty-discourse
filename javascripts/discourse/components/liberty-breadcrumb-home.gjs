@@ -1,5 +1,3 @@
-// javascripts/discourse/components/liberty-breadcrumb-home.gjs
-
 import Component from "@glimmer/component";
 import { service } from "@ember/service";
 import icon from "discourse/helpers/d-icon";
@@ -15,10 +13,10 @@ export default class LibertyBreadcrumbHome extends Component {
   <template>
     {{#if this.isCategoryPage}}
       <span class="liberty-breadcrumb-home">
-        <a href="/" aria-label="Home">
-          {{icon "feather-home"}}
+        <a href="/" aria-label="Home" class="liberty-breadcrumb-home-link">
+          {{icon "home"}}
         </a>
-        {{icon "feather-chevron-right"}}
+        {{icon "angle-right"}}
       </span>
     {{/if}}
   </template>
