@@ -12,12 +12,11 @@ export default class LibertyBreadcrumbHome extends Component {
 
   <template>
     {{#if this.isCategoryPage}}
-      <span class="liberty-breadcrumb-home">
+      <li class="liberty-breadcrumb-home-item">
         <a href="/" aria-label="Home" class="liberty-breadcrumb-home-link">
           {{icon "home"}}
         </a>
-        {{icon "angle-right"}}
-      </span>
+      </li>
     {{/if}}
   </template>
 }
