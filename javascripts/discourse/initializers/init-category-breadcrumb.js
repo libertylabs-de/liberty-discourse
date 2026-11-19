@@ -15,5 +15,6 @@ export default apiInitializer((api) => {
         [helper.iconNode("home")]
       ),
       helper.iconNode("angle-right"),
-    ]);
+      ]);
+    });
   });
