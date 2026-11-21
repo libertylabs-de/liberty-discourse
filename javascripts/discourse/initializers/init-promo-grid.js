@@ -1,5 +1,4 @@
 import { apiInitializer } from "discourse/lib/api";
-import { scheduleOnce } from "@ember/runloop";
 
 const GRID_ID = "liberty-promo-grid";
 
@@ -21,8 +20,11 @@ function insertGrid() {
   const mainOutlet = document.getElementById("main-outlet");
 
   if (!mainOutlet) {
+    console.warn("[promo-grid] #main-outlet not found");
     return;
   }
+
+  console.log("[promo-grid] inserting grid");
 
   const grid = document.createElement("div");
   grid.id = GRID_ID;
@@ -98,33 +100,16 @@ function insertGrid() {
   mainOutlet.insertAdjacentElement("afterend", grid);
 }
 
-function handleRoute(routeName) {
-  if (PROMO_ROUTES.has(routeName)) {
-    scheduleOnce("afterRender", null, insertGrid);
-  } else {
-    scheduleOnce("afterRender", null, removeGrid);
-  }
-}
-
 export default apiInitializer((api) => {
-  // ✅ Fires on route transitions
+  console.log("[promo-grid] initializer running");
+
   api.onPageChange((_url, routeName) => {
-    handleRoute(routeName);
-  });
+    console.log("[promo-grid] onPageChange fired:", routeName);
 
-  // ✅ Fires on initial boot
-  api.onAppEvent("page:changed", ({ currentRouteName }) => {
-    handleRoute(currentRouteName);
-  });
-
-  // ✅ Absolute fallback for initial load
-  scheduleOnce("afterRender", null, () => {
-    const routeName = Discourse.__container__
-      .lookup("service:router")
-      ?.currentRouteName;
-
-    if (routeName && PROMO_ROUTES.has(routeName)) {
+    if (PROMO_ROUTES.has(routeName)) {
       insertGrid();
+    } else {
+      removeGrid();
     }
   });
 });
