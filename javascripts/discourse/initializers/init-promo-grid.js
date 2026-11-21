@@ -1,4 +1,5 @@
 import { apiInitializer } from "discourse/lib/api";
+import { scheduleOnce } from "@ember/runloop";
 
 const GRID_ID = "liberty-promo-grid";
 
@@ -12,7 +13,17 @@ function removeGrid() {
   document.getElementById(GRID_ID)?.remove();
 }
 
-function buildGrid() {
+function insertGrid() {
+  if (document.getElementById(GRID_ID)) {
+    return;
+  }
+
+  const mainOutlet = document.getElementById("main-outlet");
+
+  if (!mainOutlet) {
+    return;
+  }
+
   const grid = document.createElement("div");
   grid.id = GRID_ID;
   grid.className = "homepage-promo-wrapper";
@@ -83,39 +94,26 @@ function buildGrid() {
       </div>
     </section>
   `;
-  return grid;
+
+  mainOutlet.insertAdjacentElement("afterend", grid);
 }
 
-function tryInsert() {
-  if (document.getElementById(GRID_ID)) {
-    return;
+function handleRoute(routeName) {
+  if (PROMO_ROUTES.has(routeName)) {
+    scheduleOnce("afterRender", null, insertGrid);
+  } else {
+    scheduleOnce("afterRender", null, removeGrid);
   }
-
-  const mainOutlet = document.getElementById("main-outlet");
-
-  if (!mainOutlet) {
-    return;
-  }
-
-  mainOutlet.insertAdjacentElement("afterend", buildGrid());
 }
 
 export default apiInitializer((api) => {
-  // Handle subsequent route transitions
+  // Fires on every route transition including back/forward
   api.onPageChange((_url, routeName) => {
-    if (PROMO_ROUTES.has(routeName)) {
-      tryInsert();
-    } else {
-      removeGrid();
-    }
+    handleRoute(routeName);
   });
 
-  // Handle initial page load — onPageChange never fires for the first render
+  // Fires on initial render — this is what was missing
   api.onAppEvent("page:changed", ({ currentRouteName }) => {
-    if (PROMO_ROUTES.has(currentRouteName)) {
-      tryInsert();
-    } else {
-      removeGrid();
-    }
+    handleRoute(currentRouteName);
   });
 });
