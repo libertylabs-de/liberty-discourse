@@ -107,13 +107,24 @@ function handleRoute(routeName) {
 }
 
 export default apiInitializer((api) => {
-  // Fires on every route transition including back/forward
+  // ✅ Fires on route transitions
   api.onPageChange((_url, routeName) => {
     handleRoute(routeName);
   });
 
-  // Fires on initial render — this is what was missing
+  // ✅ Fires on initial boot
   api.onAppEvent("page:changed", ({ currentRouteName }) => {
     handleRoute(currentRouteName);
+  });
+
+  // ✅ Absolute fallback for initial load
+  scheduleOnce("afterRender", null, () => {
+    const routeName = Discourse.__container__
+      .lookup("service:router")
+      ?.currentRouteName;
+
+    if (routeName && PROMO_ROUTES.has(routeName)) {
+      insertGrid();
+    }
   });
 });
