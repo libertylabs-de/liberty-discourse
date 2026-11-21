@@ -12,17 +12,7 @@ function removeGrid() {
   document.getElementById(GRID_ID)?.remove();
 }
 
-function insertGrid() {
-  if (document.getElementById(GRID_ID)) {
-    return;
-  }
-
-  const mainOutlet = document.getElementById("main-outlet");
-
-  if (!mainOutlet) {
-    return;
-  }
-
+function buildGrid() {
   const grid = document.createElement("div");
   grid.id = GRID_ID;
   grid.className = "homepage-promo-wrapper";
@@ -93,28 +83,37 @@ function insertGrid() {
       </div>
     </section>
   `;
+  return grid;
+}
 
-  mainOutlet.insertAdjacentElement("afterend", grid);
+function tryInsert() {
+  if (document.getElementById(GRID_ID)) {
+    return;
+  }
+
+  const mainOutlet = document.getElementById("main-outlet");
+
+  if (!mainOutlet) {
+    return;
+  }
+
+  mainOutlet.insertAdjacentElement("afterend", buildGrid());
 }
 
 export default apiInitializer((api) => {
-
-  // ✅ Run immediately on first load
-  api.onAppEvent("page:changed", ({ currentRouteName }) => {
-    if (PROMO_ROUTES.has(currentRouteName)) {
-      insertGrid();
+  // Handle subsequent route transitions
+  api.onPageChange((_url, routeName) => {
+    if (PROMO_ROUTES.has(routeName)) {
+      tryInsert();
     } else {
       removeGrid();
     }
   });
 
-  // ✅ Also handle the very first render before any page change fires
-  api.onPageChange((_url, routeName) => {
-    if (PROMO_ROUTES.has(routeName)) {
-      // #main-outlet may not exist yet — wait one frame
-      requestAnimationFrame(() => {
-        insertGrid();
-      });
+  // Handle initial page load — onPageChange never fires for the first render
+  api.onAppEvent("page:changed", ({ currentRouteName }) => {
+    if (PROMO_ROUTES.has(currentRouteName)) {
+      tryInsert();
     } else {
       removeGrid();
     }
