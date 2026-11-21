@@ -28,11 +28,9 @@ function insertGrid() {
   grid.className = "homepage-promo-wrapper";
   grid.innerHTML = `
     <section class="promo-video-grid" aria-label="Ausgewählte Videos">
-
       <header class="promo-video-grid__header">
         <h2 class="promo-video-grid__title">Watch &amp; Learn</h2>
       </header>
-
       <div class="promo-video-grid__grid">
 
         <div class="promo-video-card">
@@ -100,9 +98,23 @@ function insertGrid() {
 }
 
 export default apiInitializer((api) => {
+
+  // ✅ Run immediately on first load
+  api.onAppEvent("page:changed", ({ currentRouteName }) => {
+    if (PROMO_ROUTES.has(currentRouteName)) {
+      insertGrid();
+    } else {
+      removeGrid();
+    }
+  });
+
+  // ✅ Also handle the very first render before any page change fires
   api.onPageChange((_url, routeName) => {
     if (PROMO_ROUTES.has(routeName)) {
-      insertGrid();
+      // #main-outlet may not exist yet — wait one frame
+      requestAnimationFrame(() => {
+        insertGrid();
+      });
     } else {
       removeGrid();
     }
