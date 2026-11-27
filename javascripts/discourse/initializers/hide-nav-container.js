@@ -3,7 +3,7 @@ import { apiInitializer } from "discourse/lib/api";
 const HIDE_NAV_ROUTES = [
   "discovery.index",
   "discovery.categories",
-   "discovery.latest",
+  "discovery.latest",
 ];
 
 export default apiInitializer((api) => {
