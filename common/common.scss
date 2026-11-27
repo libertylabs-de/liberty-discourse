@@ -164,19 +164,19 @@ body.hide-navigation-container {
 // Hide navigation-container on homepage and /categories
 body.discovery-index,
 body.categories-index {
-  .navigation-container {
+  .navigation-container, .list-controls {
     display: none;
   }
 }
 
 // Style the heading
 .latest-discussions-heading {
-  margin: 0 0 var(--space-3);
-  padding: 0;
-  border: 0;                  // upstream draws a border-bottom on h3
   font-size: var(--font-up-1);
   font-weight: var(--heading-font-weight);;
   color: var(--primary);
+  border-bottom: 1px solid var(--primary-low);
+  padding-bottom: .5em;
+  margin-bottom: .5em;
 }
 
 .navigation-topics .topic-list .topic-list-body .topic-list-data,
