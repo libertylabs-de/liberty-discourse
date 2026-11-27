@@ -865,6 +865,6 @@ html.header-scrolled .d-header-wrap .d-header {
   box-shadow: 0 2px 4px -1px rgba(var(--always-black-rgb), 0.25);
 }
 
-.d-header-icons .d-icon {
-    color: var(--primary);
+.d-header-icons .d-icon, .header-sidebar-toggle button .d-icon {
+    color: var(--primary-700);
 }
