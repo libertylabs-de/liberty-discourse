@@ -886,3 +886,102 @@ html.header-scrolled .d-header-wrap .d-header {
 .custom-search-banner-wrap {
   text-transform: uppercase;
 }
+
+// Modifications according to Claude to achieve compatibility with liberty-right-sidebar-blocks 
+
+// ── Home layout: left sidebar | main | right sidebar ────────────────────────
+:root {
+  --liberty-right-sidebar-width: 300px;
+  --liberty-column-gap: var(--space-8);
+}
+
+// no left sidebar: content | right
+body.has-right-sidebar #main-outlet-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--liberty-right-sidebar-width);
+  grid-template-areas: "content right";
+  column-gap: var(--liberty-column-gap);
+  align-items: start;
+}
+
+// left sidebar open: sidebar | content | right
+body.has-right-sidebar.has-sidebar-page #main-outlet-wrapper {
+  grid-template-columns:
+    var(--d-sidebar-width)
+    minmax(0, 1fr)
+    var(--liberty-right-sidebar-width);
+  grid-template-areas: "sidebar content right";
+}
+
+body.has-right-sidebar {
+  .sidebar-wrapper {
+    grid-area: sidebar;
+  }
+
+  #main-outlet {
+    grid-area: content;
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding-inline: 0;
+    min-width: 0;
+  }
+
+  .after-main-outlet-outlet {
+    grid-area: right;
+    min-width: 0;
+  }
+}
+
+// ── Right sidebar: sticky column of cards ───────────────────────────────────
+.tc-right-sidebar {
+  position: sticky;
+  top: calc(var(--header-offset) + 30px);
+  max-height: calc(100vh - (var(--header-offset) + 80px));
+  margin: 30px 0 50px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  scrollbar-width: thin;
+
+  > * {
+    background-color: var(--secondary);
+    border-radius: 1em;
+    padding: var(--space-4) var(--space-5);
+    box-shadow:
+      0 2px 6px rgba(0, 0, 0, 0.07),
+      0 10.85px 24px rgba(0, 0, 0, 0.045),
+      0 4.5px 10px rgba(0, 0, 0, 0.035),
+      0 1.65px 3.65px rgba(0, 0, 0, 0.025);
+  }
+
+  .rs-component {
+    margin-bottom: 0;          // the flex gap handles spacing now
+  }
+
+  h2,
+  h3 {
+    margin: 0 0 var(--space-3);
+    font-size: var(--font-0);
+    font-weight: 600;
+    color: var(--primary);
+  }
+}
+
+// ── Narrow viewports: drop the right column first ───────────────────────────
+@media (width <= 1200px) {
+  body.has-right-sidebar #main-outlet-wrapper {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "content";
+  }
+
+  body.has-right-sidebar.has-sidebar-page #main-outlet-wrapper {
+    grid-template-columns: var(--d-sidebar-width) minmax(0, 1fr);
+    grid-template-areas: "sidebar content";
+  }
+
+  body.has-right-sidebar .after-main-outlet-outlet {
+    display: none;
+  }
+}
