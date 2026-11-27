@@ -870,9 +870,11 @@ html.header-scrolled .d-header-wrap .d-header {
 }
 .welcome-banner {
   margin-top: calc(-1 * var(--header-offset, 60px));
-  padding-top: var(--header-offset, 60px);
 }
 .liberty-category-area {
   margin-top: calc(-1 * var(--header-offset, 60px));
+  padding-top: var(--header-offset, 60px);
+}
+.--with-bg-img .welcome-banner__wrap {
   padding-top: var(--header-offset, 60px);
 }
