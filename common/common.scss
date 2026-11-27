@@ -167,8 +167,13 @@ body.categories-index {
   .navigation-container {
     display: none;
   }
+}
+body.discovery-index,
+body.categories-index {
+  .navigation-container,
+  #list-area > .list-controls,
   .list-controls {
-    display: none;
+    display: none !important;
   }
 }
 
