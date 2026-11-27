@@ -260,7 +260,7 @@ div.ac-wrap {
 }
 
 .d-header-icons .icon {
-  border-radius: 1em;
+  border-radius: 0.5em;
   margin-left: 0.3em;
   border: 1px solid transparent;
 
@@ -268,7 +268,9 @@ div.ac-wrap {
     font-size: 1.25em;
   }
 }
-
+.header-sidebar-toggle button:hover {
+    background-color: var(--d-header-icon-background--hover);
+}
 .d-header-icons .icon img.avatar {
   border-radius: 50em;
 }
