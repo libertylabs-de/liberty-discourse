@@ -268,8 +268,9 @@ div.ac-wrap {
     font-size: 1.25em;
   }
 }
-.header-sidebar-toggle button:hover {
-    background-color: var(--d-header-icon-background--hover);
+.discourse-no-touch .header-sidebar-toggle button:hover {
+  background-color: var(--d-header-icon-background--hover);
+  border-radius: 0.5em;  
 }
 .d-header-icons .icon img.avatar {
   border-radius: 50em;
