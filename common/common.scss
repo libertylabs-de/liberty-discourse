@@ -174,8 +174,8 @@ body.categories-index {
   margin: 0 0 var(--space-3);
   padding: 0;
   border: 0;                  // upstream draws a border-bottom on h3
-  font-size: var(--font-0);
-  font-weight: 600;
+  font-size: var(--font-up-1);
+  font-weight: var(--heading-font-weight);;
   color: var(--primary);
 }
 
