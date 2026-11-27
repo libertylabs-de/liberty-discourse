@@ -168,10 +168,8 @@ body.categories-index {
     display: none;
   }
 }
-body.discovery-index,
-body.categories-index {
-  .navigation-container,
-  #list-area > .list-controls,
+body.navigation-topics.discovery-index,
+body.navigation-categories.categories-index {
   .list-controls {
     display: none !important;
   }
