@@ -63,8 +63,6 @@
 .welcome-banner__wrap {
   position: relative;
   z-index: 0;
-  overflow: visible; // Important: allow pseudo-element to overflow
-  background-position: -99999px -99999px !important; // Image is still there but out of viewport
   
   // Extend background below the banner
   &::before {
