@@ -168,8 +168,7 @@ body.categories-index {
     display: none;
   }
 }
-body.navigation-topics.discovery-index,
-body.navigation-categories.categories-index {
+body.hide-navigation-container {
   .list-controls {
     display: none !important;
   }
