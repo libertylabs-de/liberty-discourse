@@ -39,6 +39,7 @@
 .discourse-no-touch .btn-default {
   background: var(--quaternary-low) !important;
   border: 1px solid var(--quaternary) !important;
+  min-width: 2.65em;
   
   &:hover {
     background: var(--quaternary) !important;
@@ -939,9 +940,15 @@ body.category-dokumentation {
     display: none !important;
   }
 
+  .btn .btn-icon-text .post-action-menu__reply .reply, #topic-footer-buttons .topic-footer-main-buttons .create {
+    display: none !important;
+  }
   .full-width .contents .topic-list .topic-list-body .topic-list-item .topic-list-data.main-link {
     width: 100%;
   }
+  
+  .full-width .contents .topic-list .topic-list-header .topic-list-data.posts {
+    display: none;
 }
 
 // Sorting sidebar entries
