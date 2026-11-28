@@ -425,18 +425,6 @@ div.ac-wrap {
 html {
   
   body {
-  background:
-    linear-gradient(
-      180deg,
-      var(--quaternary) 0%,
-      var(--quaternary-low) 600px,
-      var(--primary-100) 50%,
-      var(--primary-100) 100%
-    ) no-repeat;
-    background-color: var(--primary-100);
-  }
-  
-  body.latest {
   background-image:
     url($banner-bg),
     linear-gradient(
