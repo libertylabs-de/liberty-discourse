@@ -63,6 +63,7 @@
 .welcome-banner__wrap {
   position: relative;
   z-index: 0;
+  background: none;
   
   // Extend background below the banner
   &::before {
