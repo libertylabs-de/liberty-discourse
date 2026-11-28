@@ -60,6 +60,24 @@
 .welcome-banner.--location-above-topic-content .custom-search-banner-wrap {
   color: var(--primary) !important;
 }
+.welcome-banner {
+  position: relative;
+  z-index: 0;
+  
+  // Extend background below the banner
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: calc(100% + 200px); // Extend 200px below the banner
+    background: inherit; // Or specify your background color/gradient
+    z-index: -1;
+    pointer-events: none;
+  }
+}
 
 .custom-search-banner-wrap {
   color: var(--primary);
