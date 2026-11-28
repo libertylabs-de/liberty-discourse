@@ -435,19 +435,18 @@ html {
   background-color: var(--primary-100);
   }
   body.latesthome {
-  background-image:
-    url("https://example.com/path/to/your-image.svg"),
+  background-image: url("https://example.com/path/to/your-image.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center top;
+  // background-size: cover, auto;
+  background:
     linear-gradient(
       180deg,
       var(--quaternary) 0%,
       var(--quaternary-low) 600px,
       var(--primary-100) 50%,
       var(--primary-100) 100%
-    );
-
-  background-repeat: no-repeat, no-repeat;
-  background-position: center top, center top;
-  background-size: cover, auto;
+    ) no-repeat;
   }
   
   body.no-ember .background-container {
