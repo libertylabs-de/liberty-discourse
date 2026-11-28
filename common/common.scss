@@ -62,7 +62,7 @@
 }
 .welcome-banner__wrap {
   position: relative;
-  background-position: 0 999px;
+  background-position: 0 999px !important;
   z-index: 0;
   
   // Extend background below the banner
@@ -80,8 +80,8 @@
     pointer-events: none;
   }
 }
-.custom-category-boxes .custom-category-box {
-  z-index: 99;
+.custom-category-boxes {
+  z-index: 99 !important;
 }
 .custom-search-banner-wrap {
   color: var(--primary);
