@@ -62,16 +62,20 @@
 }
 .welcome-banner__wrap {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   overflow: visible; // Important: allow pseudo-element to overflow
   background-position: -99999px -99999px !important; // Image is still there but out of viewport
   
+  // Extend background below the banner
   &::before {
     content: "";
     position: absolute;
-    inset: 0 -9999px; // Full width
-    bottom: -200px;   // Extend below
-    background: var(--tertiary);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: calc(100% + 200px); // Extend 200px below the banner
+    background: inherit; // Or specify your background color/gradient
     z-index: -1;
     pointer-events: none;
   }
