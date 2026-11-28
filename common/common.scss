@@ -884,6 +884,16 @@ div[class^=category-title-header] {
 .category-boxes .subcategories .subcategory .subcategory-image-placeholder {
   display: none;
 }
+.category-boxes .category-box, .category-boxes-with-topics .category-box {
+  border-style: none;
+}
+.category-boxes .category-box-inner, .category-boxes-with-topics .category-box-inner {
+  border-left-width: 1px;
+}
+// Hide category icon in category-box heading only (not in subcategories)
+.category-box-heading .badge-category .d-icon {
+  display: none;
+}
 
 // Navigation Bar in Settings
 
