@@ -438,7 +438,7 @@ html {
   
   body.latesthome {
   background-image:
-    url("https://example.com/path/to/your-image.svg"),
+    url($banner-bg),
     linear-gradient(
       180deg,
       var(--quaternary) 0%,
