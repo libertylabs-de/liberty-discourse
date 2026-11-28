@@ -62,6 +62,7 @@
 }
 .welcome-banner__wrap {
   position: relative;
+  background-position: 0 999px;
   z-index: 0;
   
   // Extend background below the banner
@@ -74,6 +75,7 @@
     width: 100vw;
     height: calc(100% + 200px); // Extend 200px below the banner
     background: inherit; // Or specify your background color/gradient
+    background-position: center;
     z-index: -1;
     pointer-events: none;
   }
