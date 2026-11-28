@@ -80,7 +80,9 @@
     pointer-events: none;
   }
 }
-
+.custom-category-boxes .custom-category-box {
+  z-index: 99;
+}
 .custom-search-banner-wrap {
   color: var(--primary);
 
