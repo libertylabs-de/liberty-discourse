@@ -37,11 +37,12 @@
 }
 
 .discourse-no-touch .btn-default {
-  background: var(--quaternary-low);
-  border: 1px solid var(--quaternary);
+  background: var(--quaternary-low) !important;
+  border: 1px solid var(--quaternary) !important;
   
   :hover {
     background: var(--quaternary);
+    border: 1px solid var(--quaternary) !important;
   }
 }
 
