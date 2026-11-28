@@ -399,7 +399,14 @@ div.ac-wrap {
     font-size: 1.25em;
   }
 }
-.discourse-no-touch .header-sidebar-toggle button:hover {
+
+.sidebar-wrapper .sidebar-container {
+  border-right: none;
+  @media screen and (width <= 700px) {
+    border-right: 1px solid var(--d-sidebar-border-color)
+  }
+}
+  .discourse-no-touch .header-sidebar-toggle button:hover {
   background-color: var(--d-header-icon-background--hover);
   border-radius: 0.5em;  
 }
