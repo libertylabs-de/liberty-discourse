@@ -60,30 +60,6 @@
 }
 
 
-// Custom search banner customizations
-.welcome-banner.--location-above-topic-content .custom-search-banner-wrap {
-  color: var(--primary) !important;
-}
-.welcome-banner__wrap {
-  position: relative;
-  background-position: 0 999px !important;
-  z-index: 0;
-  
-  // Extend background below the banner
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    height: calc(100% + 600px); // Extend 600px below the banner
-    background: inherit; // Or specify your background color/gradient
-    background-position: center;
-    z-index: -1;
-    pointer-events: none;
-  }
-}
 .custom-category-boxes {
   z-index: 99 !important;
 }
@@ -1075,7 +1051,7 @@ html.header-scrolled .d-header-wrap .d-header {
 }
 .welcome-banner {
   //margin-top: calc(-1 * var(--header-offset, 60px));
-  margin-top: calc(-1 * var(--liberty-header-height));
+  //margin-top: calc(-1 * var(--liberty-header-height));
 }
 .liberty-category-area {
   // margin-top: calc(-1 * var(--header-offset, 60px));
