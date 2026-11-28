@@ -13,7 +13,7 @@
   "assets": {
       "liberty-sans-regular": "assets/LibertySans-Regular.woff2",
       "liberty-sans-medium": "assets/LibertySans-Medium.woff2",         
-      "liberty-sans-bold": "assets/LibertySans-Bold.woff2"
+      "liberty-sans-bold": "assets/LibertySans-Bold.woff2",
       "banner-bg": "assets/banner-discourse-libertylabs-main-body.webp"  
   },
   "color_schemes": {
