@@ -36,6 +36,15 @@
   padding: .3em .5em;
 }
 
+.discourse-no-touch .btn-default {
+  background: var(--quaternary-low);
+  border: 1px solid var(--quaternary);
+  
+  :hover {
+    background: var(--quaternary);
+  }
+}
+
 // Manipulate z-index of #main-outletto account for image/gradient of Liberty Category Boxes component
 
 #main-outlet-wrapper #main-outlet {
