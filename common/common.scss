@@ -263,6 +263,45 @@ body.hide-navigation-container {
   }
 }
 
+// Apply same style to all Link to all items 
+
+.upcoming-events-list__footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: var(--space-6) 0 var(--space-8);
+}
+
+.upcoming-events-list__footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--primary-high);
+  font-size: var(--font-0);
+  font-weight: 800;
+  text-decoration: none;
+
+  .d-icon {
+    width: 1em;
+    height: 1em;
+    transition: transform 0.15s ease;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--tertiary);
+    text-decoration: none;
+    .d-icon {
+      transform: translateX(3px);
+    }
+  }
+}
+
+
+
+
+
+
 #site-text-logo {
   color: var(--primary);
 }
