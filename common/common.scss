@@ -269,15 +269,15 @@ body.hide-navigation-container {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: var(--space-6) 0 var(--space-8);
+  /*margin: var(--space-6) 0 var(--space-8);*/
 }
 
 .upcoming-events-list__footer a {
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  color: var(--primary-high);
-  font-size: var(--font-0);
+  color: var(--d-link-color);
+  font-size: var(--font-up-1);
   font-weight: 800;
   text-decoration: none;
 
