@@ -41,7 +41,7 @@
   border: 1px solid var(--quaternary) !important;
   
   :hover {
-    background: var(--quaternary);
+    background: var(--quaternary) !important;
     border: 1px solid var(--quaternary) !important;
   }
 }
