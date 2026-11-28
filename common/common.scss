@@ -184,6 +184,20 @@ body.hide-navigation-container {
   margin-bottom: .5em;
 }
 
+.sortable button {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+:where(.uc-modernize-foundation-theme) .topic-list-header .topic-list-data:first-of-type,
+.navigation-topics .topic-list .topic-list-header .topic-list-data {
+  /* font-size: var(--d-topic-list-data-font-size); */
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: var(--font-down-2);
+  color: var(--primary-700);
+}
+
 .navigation-topics .topic-list .topic-list-body .topic-list-data,
 .navigation-topics .topic-list .topic-list-header .topic-list-data {
   flex: unset;
